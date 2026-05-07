@@ -97,7 +97,7 @@ export default function Privacy() {
               
               <p className="mt-6">To make any such request, please contact us at:</p>
               <p className="mt-2">📧 <a href="mailto:bd@numeromobile.com" className="text-yellow-500 hover:text-yellow-400">bd@numeromobile.com</a></p>
-              <p>📍 NumeroMobile, Sector 54, Gurgaon, Haryana, 122011</p>
+              <p>📍 NumeroMobile, 417, Tower A1, Sector-49, Gurgaon, Haryana, 122011</p>
               
               <h2 className="text-2xl font-bold mt-8 mb-4">10. Disclaimer</h2>
               <p>The content provided on this platform, including recipes, cooking videos, nutritional information, and related materials, is intended for general informational and educational purposes only. It is not a substitute for professional medical, dietary, or nutritional advice. Users are advised to consult a qualified healthcare professional or nutritionist regarding specific dietary needs, allergies, or medical conditions before following any recipes or meal plans.</p>
@@ -118,7 +118,7 @@ export default function Privacy() {
         
         <footer className="border-t border-white/20 bg-white/10 backdrop-blur-md py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto text-center text-white text-sm">
-            <p className="mb-2">&copy; 2025, Numero Mobile All Rights Reserved</p>
+            <p className="mb-2">&copy; 2025, Numero Mobile Pvt. Ltd. All Rights Reserved</p>
             <div className="flex gap-2 justify-center">
               <Link to="/terms" className="hover:text-white/80">Terms of Services</Link>
               <span>|</span>

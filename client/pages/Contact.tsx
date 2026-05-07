@@ -23,7 +23,7 @@ export default function Contact() {
             </div>
 
             <div className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 p-8 sm:p-12 animate-fade-in">
-              <h2 className="text-3xl font-bold text-white mb-8">Numero Mobile</h2>
+              <h2 className="text-3xl font-bold text-white mb-8">Numero Mobile Pvt. Ltd.</h2>
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -31,7 +31,7 @@ export default function Contact() {
                   <div>
                     <h3 className="text-xl font-semibold text-white mb-2">Address</h3>
                     <p className="text-white/80 text-lg">
-                      Sector 54, Gurgaon, Haryana, 122011
+                      417, Tower A1, Sector-49, Gurgaon, Haryana, 122011
                     </p>
                   </div>
                 </div>
@@ -83,7 +83,7 @@ export default function Contact() {
 
         <footer className="border-t border-white/20 bg-white/10 backdrop-blur-md py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto text-center text-white text-sm">
-            <p className="mb-2">&copy; 2025, Numero Mobile All Rights Reserved</p>
+            <p className="mb-2">&copy; 2025, Numero Mobile Pvt. Ltd. All Rights Reserved</p>
             <div className="flex gap-2 justify-center">
               <Link to="/terms" className="hover:text-white/80">Terms of Services</Link>
               <span>|</span>

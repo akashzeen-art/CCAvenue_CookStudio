@@ -246,7 +246,7 @@ export default function Index() {
               <img src="/logo.png" alt="Cook" className="w-32 h-32 object-contain" />
               <p className="text-white/80 text-sm">Your gateway to culinary excellence</p>
               <div className="border-t border-white/20 pt-6 w-full">
-                <p className="text-white/80 text-sm mb-2">&copy; 2025, Numero Mobile All Rights Reserved</p>
+                <p className="text-white/80 text-sm mb-2">&copy; 2025, Numero Mobile Pvt. Ltd. All Rights Reserved</p>
                 <div className="flex gap-2 justify-center text-white/80 text-sm">
                   <Link to={`/terms${queryParams}`} className="hover:text-white">Terms of Services</Link>
                   <span>|</span>
