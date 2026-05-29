@@ -194,6 +194,67 @@ export default function Index() {
           </div>
         </section>
 
+        {/* New Recipes Grid Section */}
+        <section className="relative py-20 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12 animate-slide-up">
+              <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
+                More <span className="text-yellow-500">Recipes</span>
+              </h2>
+              <p className="text-lg text-white/90 max-w-2xl mx-auto">
+                Explore our latest collection of delicious recipes
+              </p>
+            </div>
+
+            <div className="grid grid-cols-4 gap-4">
+              {[
+                { id: 1, title: "Mediterranean Soup", url: "https://vz-a2c5d962-9e6.b-cdn.net/8f33cced-89b6-424a-a3a6-03ae93d13134/play_360p.mp4" },
+                { id: 2, title: "Cheesy Garlic Rolls", url: "https://vz-a2c5d962-9e6.b-cdn.net/935fac92-4d6f-42b2-9eff-e055f0f6e7e9/play_360p.mp4" },
+                { id: 3, title: "Polish Soup", url: "https://vz-a2c5d962-9e6.b-cdn.net/e1c7cde3-9a89-47ab-81fe-18edaa0b2bfd/play_360p.mp4" },
+                { id: 4, title: "Simple Surprise Soup", url: "https://vz-a2c5d962-9e6.b-cdn.net/2015929e-76be-4bdd-b7ea-6f1da818d1fc/play_360p.mp4" },
+                { id: 5, title: "Easy Cheese Danish", url: "https://vz-a2c5d962-9e6.b-cdn.net/f070533e-5d59-424d-b0e2-76c660deac43/play_360p.mp4" },
+                { id: 6, title: "Focaccia Pizza Bread", url: "https://vz-a2c5d962-9e6.b-cdn.net/4a4b98f6-9214-4158-9127-e4e04964a3e7/play_360p.mp4" },
+                { id: 7, title: "Garlic Butter Potatoes", url: "https://vz-a2c5d962-9e6.b-cdn.net/0cac6663-931c-4704-b83d-4e298ced5818/play_360p.mp4" },
+                { id: 8, title: "Life-Saving Veggie Soup", url: "https://vz-a2c5d962-9e6.b-cdn.net/a8a1d291-4f50-4788-ba4b-a3fe163315b1/play_360p.mp4" },
+                { id: 9, title: "Chickpea Patties", url: "https://vz-a2c5d962-9e6.b-cdn.net/7dfd460c-ffb2-427f-bf06-1f6301b1e57f/play_360p.mp4" },
+                { id: 10, title: "Healthy Pancakes", url: "https://vz-a2c5d962-9e6.b-cdn.net/3314795a-5f3e-454e-97df-1b6fb2adea62/play_360p.mp4" },
+                { id: 11, title: "Chickpea Salad", url: "https://vz-a2c5d962-9e6.b-cdn.net/a3064318-3245-4c70-b2c0-5784d34e34f1/play_360p.mp4" },
+                { id: 12, title: "Master's Daily Method", url: "https://vz-a2c5d962-9e6.b-cdn.net/0455543c-90bd-46ca-b1f2-11dd9756ed69/play_360p.mp4" },
+                { id: 13, title: "Cheesy Beef Casserole", url: "https://vz-37338a02-bb9.b-cdn.net/6c399cdc-1600-4161-ab94-f974c2dd5702/play_480p.mp4" },
+                { id: 14, title: "Beef & Cabbage", url: "https://vz-a2c5d962-9e6.b-cdn.net/89df6a73-f83f-46f1-9dcc-f86fcb0175ea/play_360p.mp4" },
+                { id: 15, title: "Mediterranean Pasta Salad", url: "https://vz-a2c5d962-9e6.b-cdn.net/fe0dc2cd-1177-4b79-85d8-d7103bb193f9/play_360p.mp4" },
+                { id: 16, title: "Homemade Sushi", url: "https://vz-a2c5d962-9e6.b-cdn.net/0725a23f-7282-4315-8d94-928090d1843b/play_360p.mp4" },
+                { id: 17, title: "Chicken Fajita Pasta", url: "https://vz-a2c5d962-9e6.b-cdn.net/2cf8ae76-d194-4d0e-a74c-6dc61a905c07/play_360p.mp4" },
+                { id: 18, title: "Everyday Salad", url: "https://vz-a2c5d962-9e6.b-cdn.net/0e69b816-b94a-4c2f-826b-1413ca9c3acd/play_360p.mp4" },
+                { id: 19, title: "After-Work Potatoes", url: "https://vz-a2c5d962-9e6.b-cdn.net/5dfd44ec-8dc0-4aa0-b9f4-48a0e9de3178/play_360p.mp4" },
+                { id: 20, title: "Blood Vessel Cleanser", url: "https://vz-a2c5d962-9e6.b-cdn.net/a2dc236b-ddc1-4c45-aa47-20b6233946aa/play_360p.mp4" },
+              ].map((item) => (
+                <div
+                  key={item.id}
+                  onClick={() => openVideo(item.url, item.title)}
+                  className="rounded-xl overflow-hidden group cursor-pointer border border-white/20 bg-white/10 backdrop-blur-md hover:border-yellow-500/50 hover:shadow-lg hover:shadow-yellow-500/10 transition-all duration-300"
+                >
+                  <div className="relative h-36 overflow-hidden">
+                    <img
+                      src={`/NewLandscape/${item.id}.png`}
+                      alt={item.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                      <div className="w-10 h-10 rounded-full bg-yellow-500/90 flex items-center justify-center">
+                        <svg className="w-4 h-4 text-black ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="p-2">
+                    <p className="text-white text-xs font-medium leading-tight line-clamp-2">{item.title}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Why Choose Us Section */}
         <section className="relative py-20 px-4 sm:px-6 lg:px-8 bg-transparent">
           <div className="max-w-7xl mx-auto">
